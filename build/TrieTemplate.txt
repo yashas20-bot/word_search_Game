@@ -1,0 +1,39 @@
+export default class Trie {
+  constructor() {
+    this.wordMap = /*REPLACE_WORD_MAP*/;
+
+    this.oneLetterGroups = /*ONE_LETTER_GROUPS*/;
+    this.twoLetterGroups = /*TWO_LETTER_GROUPS*/;
+    this.threeLetterGroups = /*THREE_LETTER_GROUPS*/;
+  }
+
+  search(word) {
+    let retVal = "";
+    word = word.toLowerCase();
+    
+    let wordMap = this.wordMap;
+
+    for(let i = 0;i < word.length;i++) {
+      const letter = word[i];
+
+      if(wordMap[letter]) {
+        if(i === word.length - 1) {
+          if(wordMap[letter].completeWord) {
+            retVal = "FOUND";
+          } else { 
+            retVal = "PARTIAL";
+          }
+        } else { 
+          wordMap = wordMap[letter].wordMap;
+        }
+      } else { 
+        retVal = "NOT FOUND";
+        break;
+      }
+    }
+
+    return retVal;
+  }
+}
+
+export { Trie };

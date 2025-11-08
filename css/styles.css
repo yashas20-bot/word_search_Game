@@ -1,0 +1,134 @@
+body {
+  margin: 0 auto; 
+  font-size: 130%;
+  background-color: whitesmoke;
+}
+
+ul {
+  list-style: disclosure-closed;
+}
+
+.boardPiece {
+  padding: 10px;
+  text-align: center;
+  width: 67px;
+  height: 67px;
+  background-color: white;
+}
+
+.clicked {
+  background-color: lightblue;
+  border: 1px solid black;
+}
+
+.solved0 {
+  background-color: rgb(77, 127, 181);
+}
+.solved1 {
+  background-color: rgb(78, 152, 83);
+}
+.solved2 {
+  background-color: rgb(123, 151, 222);
+}
+.solved3 {
+  background-color: rgb(140, 229, 183);
+}
+.solved4 {
+  background-color: rgb(85, 129, 176);
+}
+.solved5 {
+  background-color: rgb(75, 138, 90);
+}
+.solved6 {
+  background-color: rgb(141, 164, 203);
+}
+.solved7 {
+  background-color: rgb(129, 155, 183);
+}
+.solved8 {
+  background-color: rgb(78, 149, 95);
+}
+.solved9 {
+  background-color: rgb(83, 126, 172);
+}
+.solved10 {
+  background-color: rgb(75, 136, 201);
+}
+.solved11 {
+  background-color: rgb(93, 181, 99);
+}
+.solved12 {
+  background-color: rgb(135, 184, 236);
+}
+.solved13 {
+  background-color: rgb(140, 229, 208);
+}
+.solved14 {
+  background-color: rgb(109, 148, 189);
+}
+.solved15 {
+  background-color: rgb(88, 132, 98);
+}
+.solved16 {
+  background-color: rgb(128, 152, 192);
+}
+.solved17 {
+  background-color: rgb(129, 155, 183);
+}
+.solved18 {
+  background-color: rgb(71, 151, 90);
+}
+.solved19 {
+  background-color: rgb(91, 126, 163);
+}
+
+.firstLetter {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.lastLetter::after {
+  content: "•";
+}
+
+.northWest::before {
+  content: "⇖";
+}
+.north::before {
+  content: "⇑";
+}
+.northEast::after {
+  content: "⇗";
+}
+.west::before {
+  content: "⇐";
+}
+.east::after {
+  content: "⇒";
+}
+.southWest::before {
+  content: "⇙";
+}
+.south::after {
+  content: "⇓";
+}
+.southEast::after {
+  content: "⇘";
+}
+
+.highlight {
+  background-color: lightgray;
+}
+
+.results {
+  border-left: 1px solid black;
+}
+
+.swatch {
+  margin: 5px;
+}
+
+.rulesButton {
+  padding-bottom: 15px;
+  padding-left: 0px;
+}
